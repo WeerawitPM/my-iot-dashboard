@@ -1,11 +1,11 @@
 import React, {useEffect, useRef, useState} from 'react';
 import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 
-const Chart = ({filter, chartId, height, width}) => {
+const Chart = ({filter, chartId, height, width, maxDataAge}) => {
   const sdk = new ChartsEmbedSDK({baseUrl: 'https://charts.mongodb.com/charts-project-0-qserm'});
   const chartDiv = useRef(null);
   const [rendered, setRendered] = useState(false);
-  const [chart] = useState(sdk.createChart({chartId: chartId, height: height, width: width, theme: "dark"}));
+  const [chart] = useState(sdk.createChart({chartId: chartId, height: height, width: width, theme: "dark", maxDataAge: maxDataAge}));
 
   useEffect(() => {
     chart.render(chartDiv.current).then(() => setRendered(true)).catch(err => console.log("Error during Charts rendering.", err));
