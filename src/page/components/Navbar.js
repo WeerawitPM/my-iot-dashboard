@@ -4,7 +4,7 @@ import './Navbar.css';
 const Navbar = () =>{
   return (
     <body>
-      <header>
+
         <div class="topnav">
           <a>
             <Link to="/">Realtime</Link>
@@ -13,7 +13,7 @@ const Navbar = () =>{
             <Link to="/report">Report</Link>
           </a>
         </div>
-      </header>
+
       <Outlet />
     </body>
   );

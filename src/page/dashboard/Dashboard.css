@@ -1,8 +1,10 @@
 .App {
-  background-color: #F7F6CF;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: #F7F6CF;
+  width: 100%;
 }
 
 .title {
@@ -24,11 +26,36 @@
   justify-content: center;
 }
 
+/* .charts2 {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  width: 1000px;
+} */
+
 .chart {
   /* border: solid #589636 1px; */
   margin: 5px;
-  display: inline-block;
+  display: flex;
   border-radius: 10px;
-  scroll-behavior: auto;
+}
+
+.chart2 {
+  /* border: solid #589636 1px; */
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.scroll {
+  display: flex;
+  overflow-x: scroll;
+  width: 500px;
+  margin: 10px;
 }
 
