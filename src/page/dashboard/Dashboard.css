@@ -20,11 +20,15 @@
 .charts {
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .chart {
-  border: solid #589636 1px;
+  /* border: solid #589636 1px; */
   margin: 5px;
   display: inline-block;
+  border-radius: 10px;
+  scroll-behavior: auto;
 }
 

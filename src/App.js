@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-import Dashboard from "./Dashboard";
-import Report from "./Report";
+import Navbar from "./page/components/Navbar";
+import Dashboard from "./page/dashboard/Dashboard";
+import Report from "./page/report/Report";
 
 export default function App() {
   return (
