@@ -4,16 +4,17 @@ import './Navbar.css';
 const Navbar = () =>{
   return (
     <body>
-
-        <div class="topnav">
-          <a>
-            <Link to="/">Realtime</Link>
-          </a>
-          <a>
-            <Link to="/report">Report</Link>
-          </a>
-        </div>
-
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Report</button>
+          <div class="dropdown-content">
+            <Link to="/monthly">monthly</Link>
+            <a href="#">yearly</a>
+            <Link to="/table">table</Link>
+          </div>
+        </div> 
+        <a> <Link to="/">Realtime</Link> </a>
+      </div>
       <Outlet />
     </body>
   );

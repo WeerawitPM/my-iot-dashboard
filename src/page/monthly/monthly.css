@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.charts {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chart {
+  /* border: solid #589636 1px; */
+  margin: 5px;
+  display: flex;
+  border-radius: 10px;
+}
+

@@ -42,20 +42,3 @@
   border-radius: 10px;
 }
 
-.chart2 {
-  /* border: solid #589636 1px; */
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.scroll {
-  display: flex;
-  justify-content: center;
-  /* overflow-x: scroll; */
-  width: 800px;
-  margin: 10px;
-}
-
